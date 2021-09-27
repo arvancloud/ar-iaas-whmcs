@@ -6,7 +6,7 @@ class  ErrorController {
 
     public function index()
     {
-        echo 'ErroController! Not Found Controller';
+        echo 'یافت نشد';
 
     }
 }

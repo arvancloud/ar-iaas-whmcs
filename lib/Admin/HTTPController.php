@@ -35,6 +35,7 @@ class HTTPController {
     public function Get($url, array $params = []) {
         $headers = array (
             'Authorization: ' . $this->getValue('API_KEY'),
+            'Content-Type: application/json',
         );
         $query = http_build_query($params); 
         $ch    = curl_init($this->getValue('Provider') . $url . '?' . $query);
@@ -49,6 +50,7 @@ class HTTPController {
     public function Post($url, array $params = []) {
         $headers = array (
             'Authorization: ' . $this->getValue('API_KEY'),
+            'Content-Type: application/json',
         );
         $query = http_build_query($params);
         $ch    = curl_init();
@@ -67,6 +69,7 @@ class HTTPController {
     public function Put($url, array $params = []) {
         $headers = array (
             'Authorization: ' . $this->getValue('API_KEY'),
+            'Content-Type: application/json',
         );
         $query = \http_build_query($params);
         $ch    = \curl_init();
@@ -84,6 +87,7 @@ class HTTPController {
     public function Delete($url, array $params = []) {
         $headers = array (
             'Authorization: ' . $this->getValue('API_KEY'),
+            'Content-Type: application/json',
         );
         $query = \http_build_query($params);
         $ch    = \curl_init();

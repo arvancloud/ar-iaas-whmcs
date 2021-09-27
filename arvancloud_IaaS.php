@@ -11,7 +11,7 @@ function arvancloud_IaaS_config() {
     "version" => "1.0",
     "author" => "Parham Afkar",
     "fields" => array(
-        "arvancloud_api" => array ("FriendlyName" => "API Key", "Type" => "text", "Size" => "60", "Description" => "Enter Your API Key"),
+        "arvancloud_api" => array ("FriendlyName" => "API Key", "Type" => "text", "Size" => "60", "Description" => "کلید API خود را وارد نمایید"),
     ));
     return $configarray;
 }
@@ -27,7 +27,7 @@ function arvancloud_IaaS_activate()
     } catch (\Exception $e) {
         return [
             'status' => "error",
-            'description' => 'فعالسازی با خطا مواجه شد. مجدد امتحان نمایید.',
+            'description' => 'خطایی رخ داده است. مجدد امتحان نمایید.',
         ];
     }
 }
@@ -38,12 +38,12 @@ function arvancloud_IaaS_deactivate()
     try {
         return [
             'status' => 'success',
-            'description' => 'ماژول مدیریت سرور آروان با موفقیت غیرفعال شد.',
+            'description' => 'ماژول مدیریت سرور ابر آروان با موفقیت غیرفعال شد.',
         ];
     } catch (\Exception $e) {
         return [
             "status" => "error",
-            "description" => "غیرفعال سازی انجام نشد. مجدد امتحان نمایید.",
+            "description" => "خطایی رخ داده است. مجدد امتحان نمایید.",
         ];
     }
 }

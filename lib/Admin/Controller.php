@@ -28,7 +28,7 @@ class Controller {
         if (is_callable(array($class, $method))) {
             return $class->$method($url, $params);
         } else {
-            echo 'Not Found Controller';
+            echo 'یافت نشد';
         }
 
     }
