@@ -19,7 +19,6 @@ class Controller {
             $method = 'index';
         }
 
-
         $this->Class = "WHMCS\\Module\\Addon\\arvancloud_IaaS\\Admin\\" . $controller;
 
         $class = $this->Class;

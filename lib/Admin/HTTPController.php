@@ -28,9 +28,9 @@ class HTTPController {
         return $this;
     }
 
-    private function ClassName(){
-        return (new \ReflectionClass($this))->getShortName();
-    }
+    // private function ClassName(){
+    //     return (new \ReflectionClass($this))->getShortName();
+    // }
 
     public function Get($url, array $params = []) {
         $headers = array (
