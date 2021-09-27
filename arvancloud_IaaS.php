@@ -1,8 +1,6 @@
 <?php
 
-use WHMCS\Database\Capsule;
 use WHMCS\Module\Addon\arvancloud_IaaS\Admin\Controller;
-
 
 function arvancloud_IaaS_config() {
     $configarray = array(
